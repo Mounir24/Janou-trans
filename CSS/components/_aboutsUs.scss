@@ -1,0 +1,267 @@
+// FUNCTIONS SCSS
+ // DISPLAY FUNCTION
+ @mixin displayed($pos, $dir) {
+    display: flex;
+    justify-content: $pos;
+    align-items: center;
+    flex-direction: $dir;
+}
+
+// BUTTONS FUNCTION
+@mixin buttons($padd, $bg, $clr) {
+   padding: $padd;
+   border: none;
+   outline: none;
+   border-radius: 24px;
+   background: $bg;
+   color: $clr;
+}
+
+// FONTS 
+@mixin fonts($fnt, $wgt, $sz, $clr) {
+   font-family: $fnt;
+   font-weight: $wgt;
+   font-size: $sz;
+   text-transform: uppercase;
+   color: $clr;
+}
+
+
+.l-header {
+    // START HEADER STYLING
+    width: 100%;
+    height: 30vh;
+    background: #000;
+    position: relative;
+    z-index: 99;
+
+    svg {
+        position: absolute;
+        bottom: -10px;
+        left: 0;
+        width: 100%;
+    }
+    .navbar {
+    // LOGO HEADER
+    .navbar-brand {
+        width: 300px;
+       height: auto;
+       @include displayed(start, row);
+
+
+       .logo-pt1, .logo-pt2 {
+        width: 100%;
+        height: 100%;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .logo-pt1 {
+     display: flex;
+     justify-content: end;
+     margin-right: 0.4rem;
+    }
+
+    .logo-pt1 > img {
+        width: 50%;
+    }
+
+    .logo-pt2 > img {
+     width: 100%;
+     }
+
+
+    .logo-pt1 {
+     display: flex;
+     justify-content: end;
+     margin-right: 0.4rem;
+    }
+
+    .logo-pt1 > img {
+        width: 50%;
+    }
+
+    .logo-pt2 > img {
+     width: 100%;
+ }
+   }
+
+   .navbar-toggler {
+       border: none;
+       outline: none;
+
+       .bx-grid-alt {
+           font-size: 30px;
+           color: #000;
+       }
+   }
+
+   .nav-item > .nav-link {
+       @include fonts($Rajdhani, 500, 17px, #ccc);
+   }
+
+   // DROPDOWN LINKS BODY
+   .dropdown-menu > .dropdown-item{
+    @include fonts($Rajdhani, 500, 15px, #000);
+   }
+
+   // MULTI LANGUAGES
+   .multi_lng_area {
+       max-width: 120px;
+       max-height: 120px;
+       cursor: pointer;
+       border-radius: 100%;
+       @include displayed(center, row);
+
+       .lng-bg {
+        background: rgba(255,255,255,0.4);
+       }
+
+       .nav-item {
+           @include displayed(center,row);
+       }
+
+       .list-lngs {
+           @include displayed(center, column);
+       }
+
+       .dropdown-toggle {
+           @include displayed(center, row);
+           color: $secondary_clr;
+       }
+
+       a {
+           text-decoration: none;
+           color: #000 !important;
+       }
+
+       .bx-world {
+           font-size: 27px;
+           color: #fff;
+       }
+
+       .flg-wrapper {
+           width: 25px;
+           height: 25px;
+           border-radius: 100%;
+           img {
+               width: 100%;
+               height: 100%;
+               object-fit: cover;
+           }
+       }
+   }
+ }
+}
+
+.about_area {
+    width: 100%;
+    min-height: 100vh;
+    padding: 1.5rem;
+   .about-title {
+       text-align: center;
+       margin: auto;
+       @include fonts($RussOne, 500, 30px, $primary_clr);
+       margin-bottom: 1.5rem;
+   }
+
+   .about_content {
+       padding: 1.5rem;
+       width: 100%;
+
+       .about-desc {
+           @include fonts($Rajdhani, 500, 16px, #111);
+           margin-bottom: 1.5rem;
+        }
+
+        .list-style > .nav-item {
+            @include fonts($Rajdhani, 500, 21px, $primary_clr);
+            margin-bottom: 0.8rem;
+
+            &:before {
+                content: "";
+                background-image: url('/Assets/SVG/check.png');
+                background-size: contain;
+                display: inline-block;
+                width: 1.5rem;
+                height: 1.5rem;
+                margin-right: 0.5rem;
+            }
+        }
+   }
+
+    .timeline-area {
+        width: 100%;
+        //height: 40vh;
+        //@include displayed(center, column);
+        margin-top: 2.5rem;
+        margin-bottom: 2.5rem;
+
+        .timeline-title {
+            text-align: center;
+            margin: auto;
+            @include fonts($RussOne, 500, 30px, $primary_clr);
+            margin-bottom: 1.5rem;
+           }
+        
+           .timeline-bx {
+               width: 100%;
+               height: 15rem;
+               background: hsl( 210, 12%, 93% );
+               position: relative;
+               overflow: hidden;
+               border-radius:24px;
+               padding: 1.5rem;
+               box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+
+               .bx-shape {
+                position: absolute;
+                top: -15%;
+                left: -15%;
+                width: 100px;
+                height: 100px;
+                border-radius: 100%;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 100%;
+                    object-fit: cover;
+                }
+               }
+
+               .bx-content {
+                   width: 100%;
+                   height: 100%;
+                   padding: 0.8rem;
+                   @include displayed(center, row);
+                   margin: auto;
+
+                   .para {
+                       @include fonts($Rajdhani, 500, 16px, $primary_clr);
+                       text-align: center;
+                   }
+               }
+
+               .label {
+                   position: absolute;
+                   bottom: 0;
+                   right: 0;
+                   width: 120px;
+                   padding: 0.5rem;
+                   background: $blue_clr;
+                   border-top-left-radius: 24px;
+                   text-align: center;
+                   //border-bottom-left-radius: 24px;
+
+                   span {
+                       color:hsl( 210, 12%, 93% );
+                       @include fonts($Rajdhani, 500, 20px, #fff);
+                   }
+               }
+           }
+    }
+
+}

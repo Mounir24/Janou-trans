@@ -1,0 +1,74 @@
+// FUNCTIONS SCSS
+ // DISPLAY FUNCTION
+ @mixin displayed($pos, $dir) {
+    display: flex;
+    justify-content: $pos;
+    align-items: center;
+    flex-direction: $dir;
+}
+
+// BUTTONS FUNCTION
+@mixin buttons($padd, $bg, $clr) {
+   padding: $padd;
+   border: none;
+   outline: none;
+   border-radius: 24px;
+   background: $bg;
+   color: $clr;
+}
+
+// FONTS 
+@mixin fonts($fnt, $wgt, $sz, $clr) {
+   font-family: $fnt;
+   font-weight: $wgt;
+   font-size: $sz;
+   text-transform: uppercase;
+   color: $clr;
+}
+
+
+.service_area {
+   min-height: 100%;
+   width: 100%;
+
+   .service-title {
+      @include fonts($RussOne, 500, 35px, #000);
+   }
+
+   .sub-title {
+      @include fonts($Rajdhani, 500, 16px, #222);
+      text-transform: lowercase;
+      padding-left: 2.5rem;
+   }
+
+   .service-content {
+      padding: 1.5rem;
+      width:100%;
+
+      .block-area {
+         padding: 1rem;
+         margin-bottom: 1.5rem;
+         .bc-title {
+            //@include fonts($Gilroy, 500, 20px, #000);
+            font-family: Gilroy;
+            font-weight: bold;
+            color: $primary_clr;
+            font-size: 20px;
+            text-transform: uppercase;
+         }
+
+         .bc-desc {
+            @include fonts($Rajdhani, 500, 18px, $primary_clr);
+            text-transform: lowercase;
+
+            .bxs-quote-left, .bxs-quote-right {
+               font-size: 21px;
+               color: $blue_clr;
+            }
+
+            .bxs-quote-left {margin-right:.5rem;}
+            .bxs-quote-right {margin-left:.5rem;}
+         }
+      }
+   }
+}

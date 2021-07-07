@@ -1,0 +1,102 @@
+// FUNCTIONS SCSS
+ // DISPLAY FUNCTION
+ @mixin displayed($pos, $dir) {
+    display: flex;
+    justify-content: $pos;
+    align-items: center;
+    flex-direction: $dir;
+}
+
+// BUTTONS FUNCTION
+@mixin buttons($padd, $bg, $clr) {
+   padding: $padd;
+   border: none;
+   outline: none;
+   border-radius: 24px;
+   background: $bg;
+   color: $clr;
+}
+
+// FONTS 
+@mixin fonts($fnt, $wgt, $sz, $clr) {
+   font-family: $fnt;
+   font-weight: $wgt;
+   font-size: $sz;
+   text-transform: uppercase;
+   color: $clr;
+}
+
+.footer_section {
+    width: 100%;
+    min-height: 25vh;
+    background: $primary_bg;
+    //position: relative;
+    @include displayed(center, column);
+
+    svg {
+        /*position: absolute;
+        top: 0;
+        left: 0;*/
+        width: 100%;
+    }
+
+    .navigation_links, .sci_area {
+        width: 100%;
+        margin: auto;
+        text-align: center;
+
+        .ftr-label {
+            @include fonts($RussOne, 500, 25px, $secondary_clr);
+            text-align: center;
+        }
+
+        .nav-link {
+            @include fonts($Rajdhani, 500, 16px, $card_bg);
+            text-decoration: none;
+        }
+
+    }
+
+    .sci_area {
+        max-width: 100%;
+        .nav-item {
+            @include displayed(start, row);
+            margin-bottom: .7rem;
+
+            .no-link {pointer-events: none;}
+
+            .icon_wrapper {
+                width: 35px;
+                height: 35px;
+                border-radius: 100%;
+                background: hsl( 184, 6%, 95% );
+                @include displayed(center, column);
+                cursor: pointer;
+
+                .bx {
+                    font-size: 21px;
+                    transition: 0.4s ease-in-out;
+
+                    &:hover {
+                        transform: rotate(360deg);
+                    }
+                }
+            }
+        }
+    }
+
+    .ftr-copy-right {
+        width:100%;
+        text-align: center;
+        margin:1.5rem auto;
+
+        p {
+            @include fonts($Rajdhani, 500, 16px, $secondary_clr);
+            .bxs-heart {
+                margin-left: 0.5rem;
+                color: hsl( 8, 80%, 58% );
+                font-size: 17px;
+            }
+        }
+    }
+}

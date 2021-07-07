@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AA6BA,AAAA,aAAa,CAAC;EACX,UAAU,EAAE,IAAI;EAChB,KAAK,EAAE,IAAI;EACX,UAAU,EAAE,GAAG;CACjB",
+    "sources": [
+        "service1.scss"
+    ],
+    "names": [],
+    "file": "service1.css"
+}

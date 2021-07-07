@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- BOX ICONS CSS (CDN) -->
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+  <!-- SLICK CSS (CDN) -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" />
+  <!-- Bootstrap 5 CSS (CDN) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+  <!-- OWN CSS FILE  -->
+  <link rel="stylesheet" href="./CSS/global.css">
+  <title>Janou Transport || Accueille</title>
+</head>
+
+<body>
+  <!--  START HOME SECTION -->
+  <main class="l-home">
+    <div class="show_case_area">
+      <!-- START HEADER -->
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+          <!-- LOGO -->
+          <a class="navbar-brand logo-anim" href="/">
+            <div class="logo-pt1">
+              <img src="./Assets/SVG/Universe-logo.png" alt="Janou Trans" class="img-fluid">
+            </div>
+            <div class="logo-pt2">
+              <img src="./Assets/SVG/JanouTrans-logo.png" alt="Janou Trans" class="img-fluid">
+            </div>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <i class='bx bx-grid-alt'></i>
+          </button>
+          <!-- NAVIGATION LINKS -->
+          <div class="collapse navbar-collapse mx-sm-auto mx-auto w-100" id="navbarNavAltMarkup">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="/">Accueille<span class="sr-only">(current)</span></a>
+              </li>
+              <!-- SERVICE DROPDOWN LINK -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  Services
+                </a>
+                <!-- SERVICES LINK DROPDOWN BODY -->
+                <div class="dropdown-menu bg-light drop-bg" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="transport-routier.html">Transport routier</a>
+                  <a class="dropdown-item" href="frigofrique.html">Frigorifique</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="transport-de-legume.html">Transport de legume</a>
+                    <a class="dropdown-item" href="transport-adr.html">Transport ADR</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About us<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Space Client<span class="sr-only">(current)</span></a>
+              </li>
+          </div>
+          <!-- MULTILANGUAGE AREA -->
+          <div class="multi_lng_area dropdown">
+            <!-- MULTI LANGUAGE ICON -->
+            <a href="" class="dropdown-toggle" role="button" id="dropLanguages" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <i class='bx bx-world'></i>
+            </a>
+            <!-- MULTI LANGUAGE BODY LINKS -->
+            <div class="dropdown-menu border-0 lng-bg" aria-labelledby="dropLanguages">
+              <ul class="navbar-nav list-lngs">
+                <li class="nav-item lng-area">
+                  <div class="flg-wrapper">
+                    <img src="./Assets/SVG/united-states.png" alt="U.S.A" class="img-fluid">
+                  </div>
+                  <button class="btn lng-btn" id="eng">English</button>
+                </li>
+                <li class="nav-item">
+                  <div class="flg-wrapper">
+                    <img src="./Assets/SVG/spain.png" alt="ESP" class="img-fluid">
+                  </div>
+                  <button class="btn lng-btn" id="esp">Espain</button>
+                </li>
+                <li class="nav-item lng-area">
+                  <div class="flg-wrapper">
+                    <img src="./Assets/SVG/france.png" alt="F.R" class="img-fluid">
+                  </div>
+                  <button class="btn lng-btn" id="fr">Francais</button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- SHOW CASE AREA -->
+      <!--<div class="img_holder show-case-slider">
+                    <img src="./Assets/IMAGES/Truck.webp" alt="Truck" class="img-responsive">
+                    <img src="./Assets/IMAGES/cruise-ship.webp" alt="Cruise" class="img-responsive">
+                    <img src="./Assets/IMAGES/helicopter.webp" alt="Helicopter" class="img-responsive">
+                    <img src="./Assets/IMAGES/truck-2.webp" alt="Truck2" class="img-responsive">
+                  </div>-->
+      <div class="video__wrapper">
+        <video autoplay loop id="trailer_video1" poster="">
+          <source src="./Assets/VIDEOS/volvo-trailer.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="container hero_wrapper">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="show_case_content show-case-anime">
+              <h1  id="show-case-title">Janou Trans 2021 Company</h1>
+              <p id="show-case-desc">We are honored to help you grow your business.</p>
+              <button class="btn contact_btn" data-tilt>
+                <a href="" id="show-case-btn">Contact US</a>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- ARROW ANIMATION -->
+        <a class="arrow_wrapper" href="#bannerArea">
+          <i class='bx bxs-down-arrow'></i>
+        </a>
+      </div>
+    </div>
+    <!-- START BANNER SECTION -->
+    <div class="banner_section">
+      <div class="banner_img_holder" id="bannerArea">
+        <img src="./Assets/IMAGES/hmK2TFUwis.jpg" alt="Truck" class="img-fluid w-100">
+      </div>
+      <div class="container">
+        <div class="banner_content mx-auto text-center">
+          <h1 class="banner-title">Notre Client Est un Roi</h1>
+        </div>
+      </div>
+    </div>
+    <!-- START PRESENTATION  GRID SECTION -->
+    <section class="presentation_area">
+      <!--<div class="container-fluid">
+              <div class="row no-gutters">
+                <div class="col-md-6">
+                  <div class="presentation_grid bg-secondary">
+                    Hello Python
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="presentation_grid bg-warning">
+                    Hello Python
+                  </div>
+                </div>
+              </div>
+            </div>-->
+      <div class="block__grid">
+        <div class="block1">
+          <div class="block_img_wrapper">
+            <img src="./Assets/IMAGES/certificate-banner.jpg" alt="" class="img-fluid hoverCard-image">
+          </div>
+          <div class="block__content">
+            <!-- BLOCK HEAD -->
+            <div class="block-head">
+              <h2 class="block__label">Certificates</h2>
+            </div>
+            <!-- BLOCK BODY -->
+            <div class="block-body block-left">
+              <h1 class="block__title">Welcome To Programming World</h1>
+              <div class="desc_wrapper">
+                <p class="block__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, quos.</p>
+              </div>
+              <button class="btn readMore-btn">
+                <a href="certificates.html">Read More</a>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="block2">
+          <!-- VIDEO BLOCK LAYER -->
+            <!-- <video loop id="trailer_video1" poster="./Assets/IMAGES/Janou3D.jpg">
+                    <source src="./Assets/VIDEOS/trailer.mp4" type="video/mp4">
+                  </video>-->
+                  <div class="block_img_wrapper">
+                    <img src="./Assets/IMAGES/Janou3D.jpg" alt="Janou Trans" class="img-fluid hoverCard-image">
+                  </div>
+                  <div class="block__content">
+                    <!-- BLOCK HEAD -->
+                    <div class="block-head">
+                      <h2 class="block__label">Locations</h2>
+                    </div>
+                    <!-- BLOCK BODY -->
+                    <div class="block-body block-right">
+                      <div class="container-fluid pos-cen">
+                        <div class="row turnOver-slider ">
+                            <div class="col-md-12">
+                              <div class="block-content">
+                                <div class="icon-wrapper">
+                                  <img src="./Assets/SVG/map.png" alt="Map Locator" class="img-fluuid">
+                                </div>
+                                <h2>Agadir</h2>
+                                <p>Technopol  Block A - 2eme Etage , Bureau 211 Lotissement Founty - Agadir</p>
+                              </div>
+                            </div>
+                            <div class="col-md-12">
+                              <div class="block-content">
+                                <div class="icon-wrapper">
+                                  <img src="./Assets/SVG/map.png" alt="Map Locator" class="img-fluuid">
+                                </div>
+                                <h2>Casabalnca</h2>
+                                <p>Roches Noir bd, Ben Aicha - Imm Ben Aicha  2eme etage bureau 27 - CasaBlanca</p>
+                              </div>
+                            </div>
+                            <div class="col-md-12">
+                              <div class="block-content">
+                                <div class="icon-wrapper">
+                                  <img src="./Assets/SVG/map.png" alt="Map Locator" class="img-fluuid">
+                                </div>
+                                <h2>Tanger</h2>
+                                <p>Bureau Tanger Med</p>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                  </div>
+            <!-- VIDEO BTN CONTROLLER -->
+            <!--<div class="btn_controller" id="btnController1">
+                    <i class='bx bx-play'></i>
+                  </div>-->
+        </div>
+        <div class="block3">
+          <div class="block_img_wrapper">
+            <img src="./Assets/IMAGES/cruise-ship.webp" alt="" class="img-fluid hoverCard-image">
+          </div>
+          <div class="block__content">
+            <!-- BLOCK HEAD -->
+            <div class="block-head">
+              <h2 class="block__label">About us</h2>
+            </div>
+            <!-- BLOCK BODY -->
+            <div class="block-body block-left">
+              <h1 class="block__title">Know about us , how we can achieve our work.</h1>
+              <div class="desc_wrapper">
+                <p class="block__desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est, cupiditate!</p>
+              </div>
+              <button class="btn readMore-btn">
+                <a href="about.html">Read More</a>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="block4">
+          <div class="block_img_wrapper">
+            <img src="./Assets/IMAGES/ship-cargo.jpg" alt="" class="img-fluid hoverCard-image">
+          </div>
+          <div class="block__content">
+            <!-- BLOCK HEAD -->
+            <div class="block-head">
+              <h2 class="block__label">Turn Over</h2>
+            </div>
+            <!-- BLOCK BODY -->
+            <div class="block-body block-right">
+              <!--<h1 class="block__title">Janou Transport Statics 2021/05/23</h1>
+              <div class="desc_wrapper">
+                <p class="block__desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est, cupiditate!</p>
+              </div>
+              <button class="btn readMore-btn">
+                <a href="*">Read More</a>
+              </button>-->
+              <div class="container-fluid pos-cen">
+                <div class="row turnOver-slider">
+                  <div class="col-md-12">
+                    <div class="block-content">
+                      <div class="icon-wrapper">
+                        <img src="./Assets/SVG/clients.png" alt="Customer Loyality" class="img-fluuid">
+                      </div>
+                      <h2>+130 Clients</h2>
+                      <p>Janou Served more than 130 clients around the world.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="block-content">
+                      <div class="icon-wrapper">
+                        <img src="./Assets/SVG/delivery.png" alt="Box Delivery" class="img-fluuid">
+                      </div>
+                      <h2>+350K Delivery</h2>
+                      <p>Janou Served more than 350K delivery around the world.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="block-content">
+                      <div class="icon-wrapper">
+                        <img src="./Assets/SVG/partners.png" alt="Team Partners" class="img-fluuid">
+                      </div>
+                      <h2>+30 partners</h2>
+                      <p>Janou contributed with +30 around the world.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="block5">
+          <!-- VIDEO BLOCK LAYER -->
+          <div class="block_video_wrapper">
+            <video loop id="trailer_video2">
+              <source src="./Assets/VIDEOS/volvo-trailer.mp4" type="video/mp4">
+            </video>
+            <!-- VIDEO BTN CONTROLLER -->
+            <div class="btn_controller" id="btnController2">
+              <i class='bx bx-play'></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- START PARTNERS SECTION -->
+    <section class="partners_area mt-5">
+      <div class="container partners-anime">
+        <h1 class="partners_title mb-4">Partners</h1>
+        <div class="row partners_slider">
+          <div class="col-md-3 text-center">
+            <div class="bx__wrapper">
+              <div class="bx_img_holder">
+                <img src="./Assets/IMAGES/Partners_logos/101.png" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 text-center">
+            <div class="bx__wrapper">
+              <div class="bx_img_holder">
+                <img src="./Assets/IMAGES/Partners_logos/Image-6.png" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 text-center">
+            <div class="bx__wrapper">
+              <div class="bx_img_holder">
+                <img src="./Assets/IMAGES/Partners_logos/Image-6hthth.png" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 text-center">
+            <div class="bx__wrapper">
+              <div class="bx_img_holder">
+                <img src="./Assets/IMAGES/Partners_logos/Image-6rr.png" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 text-center">
+            <div class="bx__wrapper">
+              <div class="bx_img_holder">
+                <img src="./Assets/IMAGES/Partners_logos/Image-6trtrr.png" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 text-center">
+            <div class="bx__wrapper">
+              <div class="bx_img_holder">
+                <img src="./Assets/IMAGES/Partners_logos/Image-6tttt.png" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 text-center">
+            <div class="bx__wrapper">
+              <div class="bx_img_holder">
+                <img src="./Assets/IMAGES/Partners_logos/Image-6vv.png" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 text-center">
+            <div class="bx__wrapper">
+              <div class="bx_img_holder">
+                <img src="./Assets/IMAGES/Partners_logos/Symbole-Renaulth.png" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- START FOOTER SECTINO -->
+  <footer class="footer_section">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#f4f6f6" fill-opacity="1"
+        d="M0,128L80,154.7C160,181,320,235,480,218.7C640,203,800,117,960,101.3C1120,85,1280,139,1360,165.3L1440,192L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z">
+      </path>
+    </svg>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="navigation_links">
+            <h3 class="ftr-label">Links</h3>
+            <ul class="nav-list">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Accueille<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Spqce Client</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">à propos de nous</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="navigation_links">
+            <h3 class="ftr-label">Services</h3>
+            <ul class="nav-list">
+              <li class="nav-item">
+                <a class="nav-link" href="transport-routier.html">Transport de Routier<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="frigofrique.html">Frigorifique</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="transport-de-legume.html">Transport de legume</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="transport-adr.html">Transport ADR</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="sci_area">
+            <ul class="nav-list">
+              <li class="nav-item">
+                <!-- LOCATION ICON -->
+                <div class="icon_wrapper">
+                  <i class='bx bxs-navigation'></i>
+                </div>
+                <!-- LOCATION TEXT -->
+                <a href="" class="nav-link no-link">Founty, 46 Agadir</a>
+              </li>
+              <li class="nav-item">
+                <!-- PHONE ICON -->
+                <div class="icon_wrapper">
+                  <i class='bx bxs-phone'></i>
+                </div>
+                <!-- PHONE TEXT -->
+                <a href="tel:+212528240015" class="nav-link">+212-528-24-00-15</a>
+              </li>
+              <li class="nav-item">
+                <!-- EMAIL ICON -->
+                <div class="icon_wrapper">
+                  <i class='bx bx-envelope'></i>
+                </div>
+                <!-- EMAIL TEXT -->
+                <a href="mailto:Janoutransport@gmail.com" class="nav-link">Janoutransport@gmail.com</a>
+              </li>
+              <li class="nav-item">
+                <!-- SOCIAL ICON -->
+                <div class="icon_wrapper">
+                  <i class='bx bxl-linkedin'></i>
+                </div>
+                <!-- LINKEDIN TEXT -->
+                <a href="https://fr.linkedin.com/company/janou-transport-sarl" target="_blank"
+                  class="nav-link">@JanouTransport.sarl</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="ftr-copy-right">
+        <p>Tous droits réservés par JanouTransport
+          <script>document.write(new Date().getFullYear());</script> <i class='bx bxs-heart'></i>
+        </p>
+      </div>
+    </div>
+  </footer>
+  <!-- Bootstrap 5  JS (CDN) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+    crossorigin="anonymous"></script>
+  <!-- SCROLLREVEAL  JS (CDN) -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <!--Slick Carousel JS (CDN)-->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <!-- SCROLLREVEAL  JS (CDN) -->
+  <script src="https://unpkg.com/tilt.js@1.2.1/dest/tilt.jquery.min.js"></script>
+  <!-- OWN SCROLL ANIMATION JS FILE  -->
+  <script src="./JS/scrollAnime.js"></script>
+  <!-- OWN JS FILE  -->
+  <script src="./JS/main.js"></script>
+  <script src="./JS/multi_langs.js"></script>
+  <script src="./JS/anime.js"></script>
+</body>
+
+</html>
